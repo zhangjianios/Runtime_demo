@@ -15,6 +15,10 @@
 		04236D5B1ECAA70900B8ADB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04236D591ECAA70900B8ADB9 /* LaunchScreen.storyboard */; };
 		04236D661ECAA70900B8ADB9 /* Runtime_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04236D651ECAA70900B8ADB9 /* Runtime_demoTests.m */; };
 		04236D711ECAA70900B8ADB9 /* Runtime_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04236D701ECAA70900B8ADB9 /* Runtime_demoUITests.m */; };
+		04236D801ECAA7F200B8ADB9 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 04236D7F1ECAA7F200B8ADB9 /* Person.m */; settings = {ASSET_TAGS = (); }; };
+		04236D861ECAB79400B8ADB9 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 04236D851ECAB79400B8ADB9 /* UIImage+Category.m */; settings = {ASSET_TAGS = (); }; };
+		04236D881ECABE8C00B8ADB9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04236D871ECABE8C00B8ADB9 /* OpenGLES.framework */; };
+		04236D8B1ECAC16000B8ADB9 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 04236D8A1ECAC16000B8ADB9 /* NSObject+Property.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		04236D6C1ECAA70900B8ADB9 /* Runtime_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Runtime_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04236D701ECAA70900B8ADB9 /* Runtime_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Runtime_demoUITests.m; sourceTree = "<group>"; };
 		04236D721ECAA70900B8ADB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04236D7E1ECAA7F200B8ADB9 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		04236D7F1ECAA7F200B8ADB9 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		04236D841ECAB79400B8ADB9 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Category.h"; path = "../UIImage+Category.h"; sourceTree = "<group>"; };
+		04236D851ECAB79400B8ADB9 /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Category.m"; path = "../UIImage+Category.m"; sourceTree = "<group>"; };
+		04236D871ECABE8C00B8ADB9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		04236D891ECAC16000B8ADB9 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		04236D8A1ECAC16000B8ADB9 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04236D881ECABE8C00B8ADB9 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +93,7 @@
 		04236D3F1ECAA70900B8ADB9 = {
 			isa = PBXGroup;
 			children = (
+				04236D871ECABE8C00B8ADB9 /* OpenGLES.framework */,
 				04236D4A1ECAA70900B8ADB9 /* Runtime_demo */,
 				04236D641ECAA70900B8ADB9 /* Runtime_demoTests */,
 				04236D6F1ECAA70900B8ADB9 /* Runtime_demoUITests */,
@@ -105,6 +118,12 @@
 				04236D4F1ECAA70900B8ADB9 /* AppDelegate.m */,
 				04236D511ECAA70900B8ADB9 /* ViewController.h */,
 				04236D521ECAA70900B8ADB9 /* ViewController.m */,
+				04236D891ECAC16000B8ADB9 /* NSObject+Property.h */,
+				04236D8A1ECAC16000B8ADB9 /* NSObject+Property.m */,
+				04236D7E1ECAA7F200B8ADB9 /* Person.h */,
+				04236D7F1ECAA7F200B8ADB9 /* Person.m */,
+				04236D841ECAB79400B8ADB9 /* UIImage+Category.h */,
+				04236D851ECAB79400B8ADB9 /* UIImage+Category.m */,
 				04236D541ECAA70900B8ADB9 /* Main.storyboard */,
 				04236D571ECAA70900B8ADB9 /* Assets.xcassets */,
 				04236D591ECAA70900B8ADB9 /* LaunchScreen.storyboard */,
@@ -272,7 +291,10 @@
 			files = (
 				04236D531ECAA70900B8ADB9 /* ViewController.m in Sources */,
 				04236D501ECAA70900B8ADB9 /* AppDelegate.m in Sources */,
+				04236D801ECAA7F200B8ADB9 /* Person.m in Sources */,
 				04236D4D1ECAA70900B8ADB9 /* main.m in Sources */,
+				04236D8B1ECAC16000B8ADB9 /* NSObject+Property.m in Sources */,
+				04236D861ECAB79400B8ADB9 /* UIImage+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
